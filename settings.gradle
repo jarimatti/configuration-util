@@ -1,0 +1,4 @@
+rootProject.name = 'configuration-util-parent'
+include 'sample'
+include 'configuration-util'
+

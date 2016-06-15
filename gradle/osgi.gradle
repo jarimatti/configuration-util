@@ -1,0 +1,17 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath "biz.aQute.bnd:biz.aQute.bnd.gradle:3.2.0"
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'biz.aQute.bnd.builder'
+
+dependencies {
+    compile "biz.aQute.bnd:biz.aQute.bndlib:3.1.0"
+    compile "org.osgi:org.osgi.core:6.0.0"
+}

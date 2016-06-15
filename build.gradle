@@ -1,0 +1,20 @@
+group 'com.github.jarimatti'
+version '0.0.1-SNAPSHOT'
+
+subprojects {
+    buildscript {
+        repositories {
+            jcenter()
+        }
+
+        dependencies {
+            classpath "biz.aQute.bnd:biz.aQute.bnd.gradle:3.2.0"
+        }
+    }
+
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+}
+

@@ -1,0 +1,21 @@
+apply from: "$rootDir/gradle/osgi.gradle"
+
+apply plugin: 'java'
+apply plugin: 'scala'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Scala is only used in tests, but including it as compile dependency
+    // makes life easier with the Scala plugin.
+    compile "org.scala-lang:scala-library:2.11.8"
+
+    testCompile "junit:junit:4.12"
+    testCompile "org.scalatest:scalatest_2.11:2.2.6"
+    testCompile "org.scalactic:scalactic_2.11:2.2.6"
+    testCompile "org.mockito:mockito-all:1.10.19"
+}

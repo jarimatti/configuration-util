@@ -1,0 +1,8 @@
+apply from: "$rootDir/gradle/osgi.gradle"
+apply plugin: 'java'
+
+dependencies {
+    compile project(":configuration-util")
+
+    compile "org.slf4j:slf4j-api:1.7.21"
+}
